@@ -48,10 +48,32 @@
   </section>
  
   <!-- DESTINOS -->
-  <main class="container">
-    <section class="row g-4" id="destinations"></section>
-  </main>
- 
+   <!-- DESTINOS -->
+<main class="container position-relative my-5">
+
+  <!-- Flecha izquierda -->
+  <button id="prevBtn"
+    class="btn btn-light position-absolute top-50 start-0 translate-middle-y shadow rounded-circle"
+    style="z-index: 10; transform: translate(50%, -50%);">
+    ◀
+  </button>
+
+  <!-- Carrusel -->
+  <div class="overflow-hidden px-4">
+    <section id="destinations"
+      class="d-flex gap-3"
+      style="transition: transform 0.4s ease;">
+    </section>
+  </div>
+
+  <!-- Flecha derecha -->
+  <button id="nextBtn"
+    class="btn btn-light position-absolute top-50 end-0 translate-middle-y shadow rounded-circle"
+    style="z-index: 10; transform: translate(-50%, -50%);">
+    ▶
+  </button>
+
+</main>
   <!-- CARRITO / OFFCANVAS -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
     <div class="offcanvas-header">

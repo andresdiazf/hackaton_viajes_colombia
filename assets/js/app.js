@@ -1,6 +1,11 @@
-// =====================================
-// FORMATO MONEDA COP
-// =====================================
+const URL_IMAGEN_BANNER = "https://blob.diariodelyaqui.mx/images/2025/05/29/5-mejores-playas-para-pasar-las-vacaciones-de-verano-en-san-carlos-051e98b5.jpg";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("banner-dinamico");
+  if (banner) {
+    banner.style.backgroundImage = `url('${URL_IMAGEN_BANNER}')`;
+  }
+});
 const COP_FORMATTER = new Intl.NumberFormat("es-CO", {
   style: "currency",
   currency: "COP",

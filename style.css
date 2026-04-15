@@ -112,3 +112,52 @@ nav.navbar {
   transform: rotate(45deg);
   display: inline-block;
 }
+
+.main-hero {
+  position: relative;
+  height: 75vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position:  center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html, body {
+  height: 100%;
+}
+ 
+body {
+  display: flex;
+  flex-direction: column;
+}
+ 
+/* El contenido crece y empuja el footer */
+main {
+  flex: 1;
+}
+ 
+.whatsapp-float {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    z-index: 9999;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease;
+  }
+ 
+  .whatsapp-float:hover {
+    background-color: #1ebe57;
+    color: #fff;
+    transform: scale(1.1);
+  }

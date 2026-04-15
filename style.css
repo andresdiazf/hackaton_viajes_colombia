@@ -1,0 +1,114 @@
+/* Paleta de Colores (variables para uso fácil) */
+:root {
+  --color-bleu-ocean: #0a1680;
+  --color-bleu-ciel: #93b2f8;
+  --color-butter-yellow: #fbedb0;
+  --color-orange-pastel: #f1b94c;
+  --color-blanc-casse: #fcfdff;
+}
+
+
+/* Estilos de Tipografía Base */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-bleu-ocean); /* Color base de texto */
+  background-color: var(--color-blanc-casse); /* Color de fondo de página opcional */
+}
+
+
+/* Estilos del Contenedor del Logo */
+.viajes-colombia-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espacio entre icono y texto */
+  font-weight: 400; /* Peso de fuente regular por defecto */
+  width: auto; /* Ajusta según el tamaño de tu icono */
+  height: 100%;
+}
+
+/* Estilo para  "Viajes" (Opción Moderna y Dinámica: Medium) */
+.text-viajes {
+  font-weight: 500; /* Peso medio */
+  font-size: 24px; /* Ajusta el tamaño */
+  text-transform: capitalize; /* Opcional: Primera letra mayúscula */
+}
+
+
+/* Estilo para  "Colombia" (Opción Moderna y Dinámica: Regular o Light Italic) */
+.text-colombia {
+  font-weight: 400; /* Peso regular */
+  /* font-style: italic; */ /* Opcional: Si quieres un toque dinámico extra */
+  font-size: 24px; /* Ajusta el tamaño (mismo que 'Viajes' para equilibrio) */
+  text-transform: capitalize;
+}
+
+
+/* Alternativa Dinámica:  "viajes" (Medium) + "COLOMBIA" (Light Italic)
+.text-viajes {
+  font-weight: 500;
+  font-size: 24px;
+}
+.text-colombia {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+*/
+
+nav.navbar {
+  background-color: var(--color-orange-pastel) !important; /* tu variable ya definida */
+  width: 100%;        /* ← porcentaje del ancho de la pantalla */
+  margin: auto;    /* ← centra el navbar */
+  min-height: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#cart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+#cart-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+
+#cart-btn:active {
+  transform: translateY(0);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Badge del contador */
+#cart-btn .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 50px;
+  background: #fff;
+  color: #0d6efd;   /* ajusta al color primario de tu navbar */
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#cart-btn .bi-airplane-fill {
+  transform: rotate(45deg);
+  display: inline-block;
+}

@@ -8,5 +8,6 @@ Integrantes:
 - Alexandra Diaz
 - Handry Moran
 - Nathaly Pulido
+- Andrés Diaz
 
 
